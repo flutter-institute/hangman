@@ -1,0 +1,26 @@
+name: hangman
+description: Simple flutter hangman
+version: 0.0.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+   - data_repo/img/victory.png
+   - data_repo/img/progress_0.png
+   - data_repo/img/progress_1.png
+   - data_repo/img/progress_2.png
+   - data_repo/img/progress_3.png
+   - data_repo/img/progress_4.png
+   - data_repo/img/progress_5.png
+   - data_repo/img/progress_6.png
+   - data_repo/img/progress_7.png
