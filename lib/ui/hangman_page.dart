@@ -89,7 +89,7 @@ class _HangmanPageState extends State<HangmanPage> {
   _renderBottomContent() {
     if (_showNewGame) {
       return RaisedButton(
-        child: new Text('New Game'),
+        child: Text('New Game'),
         onPressed: this._newGame,
       );
     } else {
@@ -100,7 +100,7 @@ class _HangmanPageState extends State<HangmanPage> {
         runSpacing: 1.0,
         alignment: WrapAlignment.center,
         children: alphabet.map((letter) => MaterialButton(
-          child: new Text(letter),
+          child: Text(letter),
           padding: EdgeInsets.all(2.0),
           onPressed: guessedLetters.contains(letter) ? null : () {
             widget._engine.guessLetter(letter);
