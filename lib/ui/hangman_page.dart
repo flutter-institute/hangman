@@ -86,7 +86,7 @@ class _HangmanPageState extends State<HangmanPage> {
     });
   }
 
-  _renderBottomContent() {
+  Widget _renderBottomContent() {
     if (_showNewGame) {
       return RaisedButton(
         child: Text('New Game'),
@@ -123,7 +123,6 @@ class _HangmanPageState extends State<HangmanPage> {
           children: <Widget>[
             // Image
             Expanded(
-              flex: 2,
               child: Image.asset(_activeImage),
             ),
             // Word
@@ -135,7 +134,6 @@ class _HangmanPageState extends State<HangmanPage> {
             ),
             // Controls
             Expanded(
-              flex: 2,
               child: Center(
                 child: this._renderBottomContent(),
               ),
