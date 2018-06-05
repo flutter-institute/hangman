@@ -93,7 +93,7 @@ class _HangmanPageState extends State<HangmanPage> {
         onPressed: this._newGame,
       );
     } else {
-      final Set<String> guessedLetters = widget._engine.lettersGuessed;
+      final Set<String> lettersGuessed = widget._engine.lettersGuessed;
 
       return Wrap(
         spacing: 1.0,
@@ -102,7 +102,7 @@ class _HangmanPageState extends State<HangmanPage> {
         children: alphabet.map((letter) => MaterialButton(
           child: Text(letter),
           padding: EdgeInsets.all(2.0),
-          onPressed: guessedLetters.contains(letter) ? null : () {
+          onPressed: lettersGuessed.contains(letter) ? null : () {
             widget._engine.guessLetter(letter);
           },
         )).toList(),
