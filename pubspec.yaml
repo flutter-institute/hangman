@@ -1,11 +1,15 @@
 name: hangman
 description: Simple flutter hangman
-version: 0.0.1
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 0.1.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.0
+  cupertino_icons: ^0.1.3
 
 dev_dependencies:
   flutter_test:
@@ -15,12 +19,4 @@ flutter:
   uses-material-design: true
 
   assets:
-   - data_repo/img/victory.png
-   - data_repo/img/progress_0.png
-   - data_repo/img/progress_1.png
-   - data_repo/img/progress_2.png
-   - data_repo/img/progress_3.png
-   - data_repo/img/progress_4.png
-   - data_repo/img/progress_5.png
-   - data_repo/img/progress_6.png
-   - data_repo/img/progress_7.png
+   - data_repo/img/
